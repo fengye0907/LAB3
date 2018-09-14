@@ -1,7 +1,8 @@
 #' The algorithm takes a graph and an initial node and calculates the
 #' shortest path from the initial node to every other node in the graph.
 #'
-#' @param graph A data.frame with three variables (v1, v2 and w) that contains the edges of the graph (from v1 to v2) with the weight of the edge (w).
+#' @param graph A data.frame with three variables (v1, v2 and w) that
+#' contains the edges of the graph (from v1 to v2) with the weight of the edge (w).
 #' @param init_node A numeric scalar that exist in the graph.
 #'
 #' @return The shortest path to every other node from the starting node as a vector.

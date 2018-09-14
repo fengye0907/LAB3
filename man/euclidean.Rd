@@ -12,7 +12,7 @@ euclidean(a, b)
 \item{b}{Interger number}
 }
 \value{
-An interger represent the greatest common divisor of two numbers.
+An interger represents the greatest common divisor of two numbers.
 }
 \description{
 The Euclidian algorithm can find the greatest common divisor of two numbers.

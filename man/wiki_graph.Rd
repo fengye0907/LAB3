@@ -9,7 +9,7 @@
 wiki_graph
 }
 \description{
-wiki_graph data is for testing dijstra method.
+This wiki_graph is for the test of dijkstra function.
 }
 \references{
 \url{https://en.wikipedia.org/wiki/Dijkstra\%27s_algorithm}

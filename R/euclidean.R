@@ -3,7 +3,7 @@
 #' @param a Integer number
 #' @param b Interger number
 #'
-#' @return An interger represent the greatest common divisor of two numbers.
+#' @return An interger represents the greatest common divisor of two numbers.
 #'
 #' @references \url{https://en.wikipedia.org/wiki/Euclidean_algorithm}
 #'

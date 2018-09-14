@@ -1,6 +1,6 @@
 #' wiki_graph
 #'
-#' @description wiki_graph data is for testing dijstra method.
+#' @description This wiki_graph is for the test of dijkstra function.
 #'
 #' @docType data
 #'
