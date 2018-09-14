@@ -2,8 +2,8 @@
 % Please edit documentation in R/dijkstra.R
 \name{dijkstra}
 \alias{dijkstra}
-\title{Dijkstras algorithm takes a graph and an initial node and calculates the shortest path from the
-initial node to every other node in the graph.}
+\title{The algorithm takes a graph and an initial node and calculates the
+shortest path from the initial node to every other node in the graph.}
 \usage{
 dijkstra(graph, init_node)
 }
@@ -16,9 +16,9 @@ dijkstra(graph, init_node)
 The shortest path to every other node from the starting node as a vector.
 }
 \description{
-Dijkstras algorithm takes a graph and an initial node and calculates the shortest path from the
-initial node to every other node in the graph.
+The algorithm takes a graph and an initial node and calculates the
+shortest path from the initial node to every other node in the graph.
 }
 \references{
-https://en.wikipedia.org/wiki/Dijkstra%27s algorithm
+\url{https://en.wikipedia.org/wiki/Dijkstra\%27s_algorithm}
 }
