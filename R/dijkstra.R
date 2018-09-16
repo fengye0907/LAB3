@@ -15,18 +15,19 @@ dijkstra <- function(graph, init_node){
   name <- c("v1", "v2", "w")
   stopifnot(is.data.frame(graph), ncol(graph)==3, is.numeric(init_node),
             init_node%in%unique(graph[,1]), name==names(graph))
-  vec <- vector()
+  vec <- vector()    # this vector records the shortest paths of all nodes
   v1 <- graph[[1]]
   v2 <- graph[[2]]
   w <- graph[[3]]
   pn <- unique(v1)
-  n <- length(pn)
+  n <- length(pn)    # the number of the nodes
 
-  vec[pn] <- Inf     # record all the distance of points from start
-  vec[init_node] <- 0
+  vec[pn] <- Inf     # assume all the distances of nodes are infinities in the beginning
+  vec[init_node] <- 0  # the distance from init_node to itself is 0
+
   a <- init_node
-  set1 <- init_node    # used
-  set2 <- setdiff(pn,set1)  # non-used
+  set1 <- init_node    # used nodes
+  set2 <- setdiff(pn,set1)  # non-used nodes
 
   while(length(set1)!=n){
     idx <- v1==a
@@ -35,7 +36,7 @@ dijkstra <- function(graph, init_node){
     p_val <- w[idx]
     t_con <- vector()
     t_val <- vector()
-    for(j in 1:m){
+    for(j in 1:m){       # check whether the connected nodes whether is used or not
       if(!p_con[j]%in%set1){
         t_con <- c(t_con, p_con[j])
         t_val <- c(t_val, p_val[j])
@@ -47,10 +48,10 @@ dijkstra <- function(graph, init_node){
     m <- length(p_con)
     for(j in 1:m){
       t <- vec[a]+p_val[j]
-      if(vec[p_con[j]]>t)
-        vec[p_con[j]] <- t
+      if(vec[p_con[j]]>t)    # if the new distance is shorter than before, than
+        vec[p_con[j]] <- t   # replace the old distance by the new one
     }
-    a <- which(vec==min(vec[p_con]))
+    a <- which(vec==min(vec[p_con]))   # new init_node
     set1 <- c(set1,a)
     set2 <- setdiff(pn, set1)
   }
