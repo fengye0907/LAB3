@@ -2,14 +2,12 @@
 % Please edit documentation in R/dijkstra.R
 \name{dijkstra}
 \alias{dijkstra}
-\title{The algorithm takes a graph and an initial node and calculates the
-shortest path from the initial node to every other node in the graph.}
+\title{dijkstra}
 \usage{
 dijkstra(graph, init_node)
 }
 \arguments{
-\item{graph}{A data.frame with three variables (v1, v2 and w) that
-contains the edges of the graph (from v1 to v2) with the weight of the edge (w).}
+\item{graph}{A data.frame with three variables (v1, v2 and w) that contains the edges of the graph (from v1 to v2) with the weight of the edge (w).}
 
 \item{init_node}{A numeric scalar that exist in the graph.}
 }
@@ -17,8 +15,7 @@ contains the edges of the graph (from v1 to v2) with the weight of the edge (w).
 The shortest path to every other node from the starting node as a vector.
 }
 \description{
-The algorithm takes a graph and an initial node and calculates the
-shortest path from the initial node to every other node in the graph.
+\code{dijkstra} The algorithm takes a graph and an initial node and calculates the shortest path from the initial node to every other node in the graph.
 }
 \references{
 \url{https://en.wikipedia.org/wiki/Dijkstra\%27s_algorithm}

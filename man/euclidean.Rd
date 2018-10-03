@@ -2,7 +2,7 @@
 % Please edit documentation in R/euclidean.R
 \name{euclidean}
 \alias{euclidean}
-\title{The Euclidian algorithm can find the greatest common divisor of two numbers.}
+\title{euclidean}
 \usage{
 euclidean(a, b)
 }
@@ -15,7 +15,7 @@ euclidean(a, b)
 An interger represents the greatest common divisor of two numbers.
 }
 \description{
-The Euclidian algorithm can find the greatest common divisor of two numbers.
+\code{euclidean} The Euclidian algorithm can find the greatest common divisor of two numbers.
 }
 \references{
 \url{https://en.wikipedia.org/wiki/Euclidean_algorithm}

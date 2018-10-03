@@ -1,4 +1,6 @@
-#' The Euclidian algorithm can find the greatest common divisor of two numbers.
+#' euclidean
+#'
+#' \code{euclidean} The Euclidian algorithm can find the greatest common divisor of two numbers.
 #'
 #' @param a Integer number
 #' @param b Interger number
