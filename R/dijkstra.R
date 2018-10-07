@@ -31,6 +31,7 @@ dijkstra <- function(graph, init_node){
   set2 <- setdiff(pn,set1)  # non-used nodes
 
   while(length(set1)!=n){
+    # browser()
     idx <- v1==a
     m <- sum(idx)
     p_con <- v2[idx]
@@ -51,8 +52,9 @@ dijkstra <- function(graph, init_node){
       t <- vec[a]+p_val[j]
       if(vec[p_con[j]]>t)    # if the new distance is shorter than before, than
         vec[p_con[j]] <- t   # replace the old distance by the new one
+      # print(vec)
     }
-    a <- which(vec==min(vec[p_con]))   # new init_node
+    a <- p_con[vec[p_con]==min(vec[p_con])]   # new init_node
     set1 <- c(set1,a)
     set2 <- setdiff(pn, set1)
   }
